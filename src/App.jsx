@@ -44,7 +44,7 @@ const ANALYSIS_MODES = {
   }
 };
 
-const GEMINI_API_KEY = "";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 
 // --- Radar Chart (SVG) ---
 const RadarChart = ({ data, size = 300 }) => {
